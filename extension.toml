@@ -1,0 +1,7 @@
+  id = "umbra"
+  name = "Umbra"
+  version = "0.1.0"
+  schema_version = 1
+  authors = ["zaitsev-av <zaitsev.av.12@gmail.com>"]
+  description = "Monochromatic dark theme with subtle semantic accents"
+  repository = "https://github.com/zaitsev-av/umbra
