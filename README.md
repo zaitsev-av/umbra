@@ -1,38 +1,67 @@
 # Umbra
 
-A monochromatic dark theme for [Zed](https://zed.dev) with subtle semantic accents.
+Umbra is a dark theme extension for [Zed](https://zed.dev) with two variants:
 
-## Design
+- **Umbra Mono** - monochrome syntax with minimal visual noise
+- **Umbra Color** - the same base UI palette with colorized syntax highlighting
 
-The theme stays strictly monochromatic for syntax — shades of gray create hierarchy without color noise. Color is reserved for semantic meaning only:
+Both variants preserve semantic UI accents for diagnostics, git changes, and editor states.
 
-- **Green** — created/added lines, git highlights, selected items
-- **Red** — errors, deleted lines
-- **Amber** — warnings
-- **Purple** — merge conflicts, AI predictions
-- **Blue-gray** — comments
+## Theme Variants
 
-<img src="assets/screenshot.png" width="1246" height="656" alt="image" />
+### Umbra Mono
+
+Monochrome syntax built around contrast and hierarchy.
+
+![Umbra Mono preview](assets/monochrom.png)
+
+### Umbra Color
+
+Colorized syntax for better token recognition while keeping Umbra's dark mood.
+
+![Umbra Color preview](assets/colorize.png)
+
+## Semantic Accents
+
+UI semantic colors are intentionally subtle and consistent across both variants:
+
+- **Green** - created/added lines, success states
+- **Red** - errors, deleted lines
+- **Amber** - warnings
+- **Purple** - conflicts, predictive/AI states
+- **Blue-gray** - informational and comment-like contexts
 
 ## Installation
 
 ### Via Zed Extensions
 
-Open the command palette and run `zed: extensions`, search for **Umbra** and install.
+1. Open the command palette.
+2. Run `zed: extensions`.
+3. Search for **Umbra** and install it.
 
-### Manual
+### Manual Installation
 
-Download `themes/umbra.json` and place it in `~/.config/zed/themes/`. Then set in your `settings.json`:
+1. Download `themes/umbra.json`.
+2. Place it in `~/.config/zed/themes/`.
+3. Choose one of the included themes in `settings.json`:
 
 ```json
 {
-  "theme": "Umbra Dark"
+  "theme": "Umbra Mono"
+}
+```
+
+or
+
+```json
+{
+  "theme": "Umbra Color"
 }
 ```
 
 ## Customization
 
-You can override any color in `settings.json` using `experimental.theme_overrides`:
+You can override any theme color in `settings.json` using `experimental.theme_overrides`:
 
 ```json
 {
