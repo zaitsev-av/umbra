@@ -1,6 +1,6 @@
   id = "umbra-theme"
   name = "Umbra"
-  version = "0.1.0"
+  version = "0.1.1"
   schema_version = 1
   authors = ["zaitsev-av <zaitsev.av.12@gmail.com>"]
   description = "Monochromatic dark theme with subtle semantic accents"
